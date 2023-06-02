@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div class="header">
+  <body class="blurred">
+    <header class="header">
       <div class="header-left">
         <img
-          src="./public/icons/sun.svg"
+          src="/icons/sun.svg"
           class="weather-icon-large"
           data-current-icon
         />
+
         <div class="header-current-temp">
           <span data-current-temp>31</span>&deg;
         </div>
@@ -56,7 +57,88 @@
           </div>
         </div>
       </div>
-    </div>
-    <script type="module" src="/main.js"></script>
+    </header>
+    <section class="day-section" data-day-section>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Monday</div>
+        <div>32&deg;</div>
+      </div>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Tuesday</div>
+        <div>32&deg;</div>
+      </div>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Thursday</div>
+        <div>32&deg;</div>
+      </div>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Wednesday</div>
+        <div>32&deg;</div>
+      </div>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Friday</div>
+        <div>32&deg;</div>
+      </div>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Saturday</div>
+        <div>32&deg;</div>
+      </div>
+      <div class="day-card">
+        <img src="icons/cloud.svg" class="weather-icon" />
+        <div class="day-card-day">Sunday</div>
+        <div>32&deg;</div>
+      </div>
+    </section>
+    <table class="hour-section">
+      <tbody data-hour-section>
+        <tr class="hour-row">
+          <td>
+            <div class="info-group">
+            <div class="label">Thursday</div>
+            <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img class="weather-icon" src="icons/cloud.svg" />
+          </td>
+          <td>
+            <div class="info-group">
+            <div class="label">temp</div>
+            <div>31&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">fl temp</div>
+              <div>25&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">wind</div>
+              <div>
+                26
+                <span class="value-sub-info">mph</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="info-group">
+              <div class="label">precip</div>
+              <div>
+                0
+                <span class="value-sub-info">in</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
