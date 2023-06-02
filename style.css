@@ -3,27 +3,27 @@
   box-sizing: border-box;
 }
 
-*{
-  --font-color:hsl(200, 100%, 10%);
-  --border-color:2px solid black;
+* {
+  --font-color: hsl(200, 100%, 10%);
+  --border-color: 2px solid black;
 }
 
 body {
   margin: 0;
   background-color: hsl(200, 100%, 85%);
   color: hsl(200, 100%, 10%);
-  font-family: 'Noto Sans Chorasmian';
+  font-family: "Noto Sans Chorasmian";
 }
 
-.blurred{
+.blurred {
   /* filter: blur(3px); */
   /* overflow: hidden; */
 }
 
 .header {
   display: flex;
-  align-items:center; 
-  border:var(--border-color);
+  align-items: center;
+  border: var(--border-color);
 }
 
 .header-left {
@@ -48,19 +48,18 @@ body {
 .weather-icon {
   width: 40px;
   height: 40px;
-
 }
 
 .weather-icon-large {
   width: 80px;
   height: 80px;
-  margin-left:1rem;
+  margin-left: 1rem;
 }
 
 .header-current-temp {
   font-size: 2rem;
-  margin: .5rem;
-  border: 1px solid  var(--font-color);
+  margin: 0.5rem;
+  border: 1px solid var(--font-color);
 }
 
 .info-group {
@@ -68,44 +67,62 @@ body {
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  border:var(--border-color);
+  border: var(--border-color);
 }
 
 .label {
   text-transform: uppercase;
-  font-family: 'Noto Sans Chorasmian';
+  font-family: "Noto Sans Chorasmian";
   font-size: 1rem;
   color: hsl(200, 100%, 20%);
 }
 
-.value-sub-info{
+.value-sub-info {
   font-weight: lighter;
-  font-size: 1rem;  
+  font-size: 1rem;
   text-transform: lowercase;
-  color: var(--font-color);  
+  color: var(--font-color);
 }
 
-.day-section{
+.day-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 75px);  
-  gap: 1rem;  
+  grid-template-columns: repeat(auto-fit, 75px);
+  gap: 1rem;
   justify-content: center;
   padding: 1rem;
-  border:var(--border-color);
+  border: var(--border-color);
 }
 
-.day-card{
-  display:flex;
-  flex-direction: column;  
+.day-card {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  border: 1px solid hsl(200, 100%, 10%);
-  border-radius: .75rem;
-  padding: .25rem;  
+  border: 1px solid;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
 }
 
-.day-card-day{
-  font-size: .75rem;
+.day-card-day {
+  font-size: 0.75rem;
   color: hsl(200, 100%, 20%);
-  padding: .5rem;
-  margin-top: .5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.hour-section {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.hour-row {
+  background-color: hsl(200, 60%, 75%);
+}
+
+.hour-row:nth-child(2n) {
+  background-color: hsl(200, 60%, 70%);
+}
+
+.hour-row > td {
+  padding: 0.25rem 0.5rem;
 }
